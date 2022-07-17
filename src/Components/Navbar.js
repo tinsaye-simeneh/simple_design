@@ -1,9 +1,8 @@
 import React from "react";
-import '../Components/navBar.css';
+import "../Components/navBar.css";
 import logo from "../assets/images/Logo/Logo.png";
-const navLeftElements = ["Home", "Source Code"];
+const navLeftElements = ["Home", "SourceCode"];
 const navRightElements = ["Login", "Signup"];
-
 
 function Navbar() {
   return (
@@ -14,35 +13,30 @@ function Navbar() {
             {navLeftElements.map((element, index) => {
               return (
                 <>
-                  <a
-                    key={index}
-                    className="linkStyle px-3 mx-3"
-                    href={element}
-                  >
+                  <a key={index} className="linkStyle px-3 mx-5" href={element}>
                     {element}
                   </a>
                 </>
               );
             })}
           </div>
-          <div className="col-sm-4">
+          <div className="col-sm-4 ps-5">
             <img src={logo} alt="logo" />
           </div>
           <div className="col-sm-4">
             {navRightElements.map((element, index) => {
               return (
                 <>
-                  <a
-                    key={index}
-                    className="linkStyle px-3 mx-3"
-                    href={element}
-                  >
+                  <a key={index} className="linkStyle pe-4 mx-5" href={element}>
                     {element}
                   </a>
                 </>
               );
             })}
           </div>
+        </div>
+        <div className="row mt-3">
+            <hr/>
         </div>
       </div>
     </>
