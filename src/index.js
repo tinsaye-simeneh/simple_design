@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Home from './Components/pages/Home.js';
-import 'bootstrap' 
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Simple(){
   return(
