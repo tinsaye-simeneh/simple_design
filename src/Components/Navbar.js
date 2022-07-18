@@ -8,7 +8,7 @@ function Navbar() {
   return (
     <>
       <div className="container mt-4 text-center">
-        <div className="row align-items-center">
+        <div className="row align-items-center" style={{display: { sm: "none", md: "none" }}}>
           <div className="col-sm-4">
             {navLeftElements.map((element, index) => {
               return (
