@@ -1,0 +1,17 @@
+.ImgWidth{
+    width:500px;
+    height: 400px;
+}
+.formWidth{
+      width: 75%;
+}
+
+  @media screen and (max-width: 768px) {
+      .ImgWidth{
+          width:275px;
+          height: 300px;
+      }
+      .formWidth{
+            width: 100%;
+      }
+  }

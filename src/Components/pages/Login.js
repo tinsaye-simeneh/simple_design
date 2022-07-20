@@ -1,32 +1,30 @@
 import React from "react";
-import Header from "../Navbar";
+import '../style/Login.css';
 import AccountImg from "../../assets/images/Account/Account.jpg";
 
 function Login() {
   return (
     <>
-      <Header />
       <div className="container-fluid text-center">
-        <div className="row mx-3">
-          <div className="col-sm-6 HomeIllustration">
+        <div className="row mx-3 mt-5">
+          <div className="col-sm-6">
             <img
+            className="ImgWidth"
               src={AccountImg}
-              alt="Home Illustration"
-              width={600}
-              height={500}
+              alt="Login Illustration"
             />
           </div>
 
           <div
-            className="col-sm-6 mt-4 textPadding"
+            className="col-sm-6 mt-4"
             style={{
               display: "flex",
               justifyContent: "center",
             }}
           >
-            <form className="w-75">
-              <div className="form-group mb-5">
-                <h4>Login</h4>
+            <form className=" formWidth">
+              <div className="form-group mb-5 mt-3">
+                <h4 style={{textDecoration:'underline'}}>Login</h4>
               </div>
               <div className="form-group">
                 <input
@@ -47,7 +45,7 @@ function Login() {
                 />
               </div>
               <div className="form-group mt-4">
-                <button className="form-control">Login</button>
+                <button className="form-control" style={{backgroundColor:'#FF8D36', color:'white'}}>Login</button>
               </div>
             </form>
           </div>
