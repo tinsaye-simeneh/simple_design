@@ -5,10 +5,10 @@ import AccountImg from "../../assets/images/Account/Account.jpg";
 function handleSubmit(e){
     e.preventDefault();
     alert("Login Successful");
-    window.location.href = "/Home";
+    window.location.href = "/Login";
 }
 
-function Login() {
+function Signup() {
   return (
     <>
       <div className="container-fluid text-center">
@@ -30,9 +30,19 @@ function Login() {
           >
             <form className=" formWidth" onSubmit={handleSubmit}>
               <div className="form-group mb-5 mt-3 ">
-                <h4 style={{ textDecoration: "underline" }}>Login</h4>
+                <h4 style={{ textDecoration: "underline" }}>Signup</h4>
               </div>
               <div className="form-group">
+                <input
+                  type="username"
+                  className="form-control"
+                  id="exampleInputUsername1"
+                  aria-describedby="usernameHelp"
+                  placeholder="Enter Username"
+                  required
+                />
+              </div>
+              <div className="form-group mt-4">
                 <input
                   type="email"
                   className="form-control"
@@ -53,31 +63,32 @@ function Login() {
                 />
               </div>
               <div className="form-group mt-4">
+                <input
+                  type="Confirmpassword"
+                  className="form-control"
+                  id="exampleInputconfirmPassword1"
+                  aria-describedby="confirmpasswordHelp"
+                  placeholder="Confirm Password"
+                  required
+                />
+              </div>
+              <div className="form-group mt-4">
                 <button
                   type="submit"
                   className="form-control"
                   style={{ backgroundColor: "#FF8D36", color: "white" }}
                 >
-                  Login
+                  Signup
                 </button>
               </div>
               <div className="mt-4">
                 <span>
-                  Don't have an account?{" "}
+                  Already have an account?{" "}
                   <a
-                    href="/Signup"
+                    href="/Login"
                     style={{ color: "#04BCAA", textDecoration: "none" }}
                   >
-                    Signup
-                  </a>
-                </span>
-                <br className="newLine" />
-                <span className="linkStyle">
-                  <a
-                    href="/ForgotPassword"
-                    style={{ color: "#04BCAA", textDecoration: "none" }}
-                  >
-                    forgot password?
+                    Login
                   </a>
                 </span>
               </div>
@@ -89,4 +100,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default Signup;
