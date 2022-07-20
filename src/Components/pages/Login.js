@@ -2,6 +2,12 @@ import React from "react";
 import "../style/Login.css";
 import AccountImg from "../../assets/images/Account/Account.jpg";
 
+function handleSubmit(e){
+    e.preventDefault();
+    alert("Login Successful");
+    window.location.href = "/Home";
+}
+
 function Login() {
   return (
     <>
@@ -22,7 +28,7 @@ function Login() {
               justifyContent: "center",
             }}
           >
-            <form className=" formWidth">
+            <form className=" formWidth" onSubmit={handleSubmit}>
               <div className="form-group mb-5 mt-3 ">
                 <h4 style={{ textDecoration: "underline" }}>Login</h4>
               </div>
@@ -33,19 +39,22 @@ function Login() {
                   id="exampleInputEmail1"
                   aria-describedby="emailHelp"
                   placeholder="Enter email"
+                  required
                 />
               </div>
               <div className="form-group mt-4">
                 <input
-                  type="email"
+                  type="password"
                   className="form-control"
                   id="exampleInputPassword1"
                   aria-describedby="passwordHelp"
                   placeholder="Enter Password"
+                  required
                 />
               </div>
               <div className="form-group mt-4">
                 <button
+                  type="submit"
                   className="form-control"
                   style={{ backgroundColor: "#FF8D36", color: "white" }}
                 >
@@ -54,10 +63,23 @@ function Login() {
               </div>
               <div className="mt-4">
                 <span>
-                  Don't have an account? <a href="/Signup">Signup</a>
-                  </span>
-                  <br className="newLine"/>
-                  <span className="linkStyle">forgot password?</span>
+                  Don't have an account?{" "}
+                  <a
+                    href="/Signup"
+                    style={{ color: "#04BCAA", textDecoration: "none" }}
+                  >
+                    Signup
+                  </a>
+                </span>
+                <br className="newLine" />
+                <span className="linkStyle">
+                  <a
+                    href="/ForgotPassword"
+                    style={{ color: "#04BCAA", textDecoration: "none" }}
+                  >
+                    forgot password?
+                  </a>
+                </span>
               </div>
             </form>
           </div>
