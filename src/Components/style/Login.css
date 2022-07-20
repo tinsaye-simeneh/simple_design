@@ -3,7 +3,13 @@
     height: 400px;
 }
 .formWidth{
-      width: 75%;
+      width: 65%;
+}
+.linkStyle{
+    padding-left: 65px;
+}
+.newLine{
+    display: none;
 }
 
   @media screen and (max-width: 768px) {
@@ -14,4 +20,10 @@
       .formWidth{
             width: 100%;
       }
+      .linkStyle{
+        padding: 0px;
+    }
+    .newLine{
+        display: flex;
+    }
   }

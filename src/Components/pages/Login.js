@@ -1,5 +1,5 @@
 import React from "react";
-import '../style/Login.css';
+import "../style/Login.css";
 import AccountImg from "../../assets/images/Account/Account.jpg";
 
 function Login() {
@@ -9,7 +9,7 @@ function Login() {
         <div className="row mx-3 mt-5">
           <div className="col-sm-6">
             <img
-            className="ImgWidth"
+              className="ImgWidth"
               src={AccountImg}
               alt="Login Illustration"
             />
@@ -23,8 +23,8 @@ function Login() {
             }}
           >
             <form className=" formWidth">
-              <div className="form-group mb-5 mt-3">
-                <h4 style={{textDecoration:'underline'}}>Login</h4>
+              <div className="form-group mb-5 mt-3 ">
+                <h4 style={{ textDecoration: "underline" }}>Login</h4>
               </div>
               <div className="form-group">
                 <input
@@ -45,7 +45,19 @@ function Login() {
                 />
               </div>
               <div className="form-group mt-4">
-                <button className="form-control" style={{backgroundColor:'#FF8D36', color:'white'}}>Login</button>
+                <button
+                  className="form-control"
+                  style={{ backgroundColor: "#FF8D36", color: "white" }}
+                >
+                  Login
+                </button>
+              </div>
+              <div className="mt-4">
+                <span>
+                  Don't have an account? <a href="/Signup">Signup</a>
+                  </span>
+                  <br className="newLine"/>
+                  <span className="linkStyle">forgot password?</span>
               </div>
             </form>
           </div>
