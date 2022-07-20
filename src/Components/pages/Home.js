@@ -9,19 +9,19 @@ function Home() {
     <>
       <Header />
       <div className="container-fluid">
-        <div className="row">
-          <div className="col-md-6 textPadding">
+        <div className="row mx-3">
+          <div className="col-sm-6 textPadding">
             <h1>We Train</h1>
             <h1>Best Standards of</h1>
             <h1>Responsive Websites</h1>
-            <h1>Best Standards of</h1>
+            <h1>And Apps</h1>
             <p className="mt-3">{HomeText}</p>
             <span>
               Register Here:{" "}
-              <button className="btn" style={{backgroundColor:'#FF8D36', color:'white'}}>Contact Us</button>
+              <button className="btn" style={{backgroundColor:'#FF8D36', color:'white'}}>Signup</button>
             </span>
           </div>
-          <div className="col-md-6 ps-5 HomeIllustration">
+          <div className="col-sm-6 HomeIllustration">
             <img
               src={HomeIllustration}
               alt="Home Illustration"

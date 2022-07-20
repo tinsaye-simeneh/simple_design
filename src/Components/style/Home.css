@@ -1,13 +1,9 @@
 .textPadding {
-  padding: 40px 0px 0 40px;
+  padding: 40px 0px 0px 40px;
 }
 @media screen and (max-width: 768px) {
-  .textPadding {
-    display: none;
-    padding: 0px;
-  }
-  .HomeIllustration{
-    display: none;
-  }
+    .HomeIllustration{
+        display: none;
+    }
 }
     
