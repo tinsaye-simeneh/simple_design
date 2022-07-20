@@ -8,7 +8,7 @@ function Home() {
   return (
     <>
       <Header />
-      <div className="container-fluid">
+      <div className="container-fluid mb-5">
         <div className="row mx-3">
           <div className="col-sm-6 textPadding">
             <h1>We Train</h1>

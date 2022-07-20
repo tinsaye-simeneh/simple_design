@@ -5,13 +5,19 @@ import "../style/Account.css";
 function Forgot() {
   const [isOpen, setIsOpen] = useState(false);
 
-  function toggleModal() {
-    setIsOpen(!isOpen);
-  }
+  const handleOpen = () => {
+    setIsOpen(true);
+  };
+
+
+  const handleClose = () => {
+    setIsOpen(false);
+  };
+
   return (
     <>
       <button
-        onClick={toggleModal}
+        onClick={handleOpen}
         data-target="#myModal"
         data-toggle="modal"
         data-backdrop="static"
@@ -28,8 +34,12 @@ function Forgot() {
       </button>
 
       <Modal
+      onClose={(_, reason) => {
+        if (reason !== "backdropClick") {
+          handleClose();
+        }
+      }}
         isOpen={isOpen}
-        onRequestClose={toggleModal}
         contentLabel="My dialog"
         className="mymodal"
         overlayClassName="myoverlay"
@@ -71,7 +81,7 @@ function Forgot() {
                 </div>
               </form>
             </div>
-            <button className="btn mt-4" onClick={toggleModal}>
+            <button className="btn mt-4" onClick={handleClose}>
               Close modal
             </button>
           </div>

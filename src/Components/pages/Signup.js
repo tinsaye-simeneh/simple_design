@@ -11,7 +11,7 @@ function handleSubmit(e){
 function Signup() {
   return (
     <>
-      <div className="container-fluid text-center">
+      <div className="container-fluid text-center mb-5">
         <div className="row mx-3 mt-5">
           <div className="col-sm-6">
             <img
