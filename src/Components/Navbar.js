@@ -8,7 +8,7 @@ function Navbar() {
         <nav className="navbar navbar-expand-lg navbar-light bg-light m-4 rounded shadow">
           <div className="container-fluid">
             <a className="navbar-brand" href="/">
-              <img src={logo} alt="Logo img" width={200}/>
+              <img src={logo} alt="Logo img" width={200} />
             </a>
             <button
               className="navbar-toggler"
