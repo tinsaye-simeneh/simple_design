@@ -5,11 +5,37 @@
 .formWidth {
   width: 65%;
 }
+.newLine {
+  display: none;
+}
+.forgotFormWidth {
+  width: 400px;
+}
 .linkStyle {
   padding-left: 65px;
 }
-.newLine {
-  display: none;
+
+.mymodal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  border: 1px solid #ccc;
+  background: #fff;
+  overflow: auto;
+  border-radius: 4px;
+  outline: none;
+  padding: 20px;
+}
+
+.myoverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 @media screen and (max-width: 768px) {
@@ -25,5 +51,8 @@
   }
   .newLine {
     display: flex;
+  }
+  .forgotFormWidth {
+    width: 300px;
   }
 }

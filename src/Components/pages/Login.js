@@ -1,6 +1,7 @@
 import React from "react";
 import "../style/Account.css";
 import AccountImg from "../../assets/images/Account/Account.jpg";
+import Forgot from "../modals/Forgot";
 
 function handleSubmit(e){
     e.preventDefault();
@@ -72,14 +73,7 @@ function Login() {
                   </a>
                 </span>
                 <br className="newLine" />
-                <span className="linkStyle">
-                  <a
-                    href="/ForgotPassword"
-                    style={{ color: "#04BCAA", textDecoration: "none" }}
-                  >
-                    forgot password?
-                  </a>
-                </span>
+                    <Forgot/>
               </div>
             </form>
           </div>

@@ -11,7 +11,7 @@ export default function Simple(){
   return(
     <>
     <Header />
-    <Signup/>
+    <Login/>
     </>
   )
 }
