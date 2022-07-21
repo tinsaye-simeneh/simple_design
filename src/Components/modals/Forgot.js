@@ -2,6 +2,13 @@ import React, { useState } from "react";
 import Modal from "react-modal";
 import "../style/Account.css";
 
+function handleSubmit(e){
+  e.preventDefault();
+  alert("We have Sent you a password reset email");
+  window.location.href = "/Login";
+}
+
+
 function Forgot() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -54,7 +61,7 @@ function Forgot() {
                 justifyContent: "center",
               }}
             >
-              <form className="forgotFormWidth">
+              <form className="forgotFormWidth" onSubmit={handleSubmit}>
                 <div className="form-group mb-4">
                   <h5 style={{ textDecoration: "underline" }}>
                     Forgot Password

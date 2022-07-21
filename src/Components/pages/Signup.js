@@ -4,7 +4,7 @@ import AccountImg from "../../assets/images/Account/Account.jpg";
 
 function handleSubmit(e){
     e.preventDefault();
-    alert("Login Successful");
+    alert("Registration Successful");
     window.location.href = "/Login";
 }
 

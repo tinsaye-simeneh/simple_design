@@ -1,5 +1,4 @@
 import React from "react";
-import Header from "../Navbar";
 import HomeIllustration from "../../assets/images/Home/HomeIllustration.png";
 import HomeText from "./HomeText";
 import "../style/Home.css";
@@ -7,7 +6,6 @@ import "../style/Home.css";
 function Home() {
   return (
     <>
-      <Header />
       <div className="container-fluid mb-5">
         <div className="row mx-3">
           <div className="col-sm-6 textPadding">
@@ -18,7 +16,15 @@ function Home() {
             <p className="mt-3">{HomeText}</p>
             <span>
               Register Here:{" "}
-              <button className="btn" style={{backgroundColor:'#FF8D36', color:'white'}}>Signup</button>
+              <a href="/signup">
+              <button
+              type="submit"
+                className="btn"
+                style={{ backgroundColor: "#FF8D36", color: "white" }}
+              >
+                Signup
+              </button>
+              </a>
             </span>
           </div>
           <div className="col-sm-6 HomeIllustration">

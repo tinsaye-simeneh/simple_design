@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../assets/images/Logo/Logo.png";
+import { Outlet, Link } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -29,19 +30,19 @@ function Navbar() {
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="/Source">
+                  <a className="nav-link" href="/source">
                     Source Code
                   </a>
                 </li>
 
                 <li className="nav-item">
-                  <a className="nav-link" href="/Login">
+                  <a className="nav-link" href="/login">
                     Login
                   </a>
                 </li>
 
                 <li className="nav-item">
-                  <a className="nav-link" href="/Signup">
+                  <a className="nav-link" href="/signup">
                     Signup
                   </a>
                 </li>

@@ -56,6 +56,7 @@ function Login() {
               <div className="form-group mt-4">
                 <button
                   type="submit"
+                  href='/login'
                   className="form-control"
                   style={{ backgroundColor: "#FF8D36", color: "white" }}
                 >
@@ -66,7 +67,7 @@ function Login() {
                 <span>
                   Don't have an account?{" "}
                   <a
-                    href="/Signup"
+                    href="/signup"
                     style={{ color: "#04BCAA", textDecoration: "none" }}
                   >
                     Signup

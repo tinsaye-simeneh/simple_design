@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './Components/Navbar';
 import Home from './Components/pages/Home.js';
 import Login from './Components/pages/Login.js';
@@ -11,7 +12,16 @@ export default function Simple(){
   return(
     <>
     <Header />
-    <Login/>
+    <BrowserRouter>
+      <Routes>
+        <Route>
+          <Route index element={<Home />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="*" element={<Home/>} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
     </>
   )
 }
