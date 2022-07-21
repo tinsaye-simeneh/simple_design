@@ -1,0 +1,18 @@
+.textPadding {
+  padding: 40px 0px 0px 40px;
+}
+.ImgDiv {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .ImgWidth {
+    width: 300px;
+    height: 300px;
+  }
+  .ImgDiv{
+    display: inline;
+  }
+    .HomeIllustration{
+        display: none;
+    }
+}

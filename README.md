@@ -1,2 +1,3 @@
-# Simple_design_landing-page
-A simple landing page that built for the company called simple design using react.js and it includes user login and signup pages.
+# simple Design
+
+An account page for a design a fictional company called simple design that includes login and signup pages.
