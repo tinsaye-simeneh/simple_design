@@ -8,6 +8,14 @@ function Home() {
     <>
       <div className="container-fluid mb-5">
         <div className="row mx-3">
+        <div className="col-sm-6 ImgDiv">
+            <img
+              className="ImgWidth"
+              src={HomeIllustration}
+              alt="Home Illustration"
+            />
+          </div>
+
           <div className="col-sm-6 textPadding">
             <h1>We Train</h1>
             <h1>Best Standards of</h1>
