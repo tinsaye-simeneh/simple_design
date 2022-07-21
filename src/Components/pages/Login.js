@@ -3,9 +3,9 @@ import "../style/Account.css";
 import AccountImg from "../../assets/images/Account/Account.jpg";
 import Forgot from "../modals/Forgot";
 
-function handleSubmit(e){
+function handleLogin(e){
     e.preventDefault();
-    alert("Login Successful");
+    alert("We have been reviewing your Requests, We will email you as soon as we finished the reviewing Process.");
     window.location.href = "/Home";
 }
 
@@ -29,7 +29,7 @@ function Login() {
               justifyContent: "center",
             }}
           >
-            <form className=" formWidth" onSubmit={handleSubmit}>
+            <form className=" formWidth" onSubmit={handleLogin}>
               <div className="form-group mb-5 mt-3 ">
                 <h4 style={{ textDecoration: "underline" }}>Login</h4>
               </div>
